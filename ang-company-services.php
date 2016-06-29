@@ -15,20 +15,42 @@
  * @wordpress-plugin
  * Plugin Name:       ANG Company Services
  * Plugin URI:        https://github.com/alex1278/ang-company-services
- * Description:       This is a short description of what the plugin does. It's displayed in the WordPress admin area.
+ * Description:       List of Services for your company.
+ * Tags:              service, custom post type, custom taxonomy, images, custom fields, shortcode
  * Version:           1.0.0
+ * Date:              30.06.2016
  * Author:            Aleksandr Glovatskyy
  * Author URI:        http://torbara.com
+ * Author e-mail:     alex1278@list.ru
  * License:           GPL-2.0+
  * License URI:       http://www.gnu.org/licenses/gpl-2.0.txt
  * Text Domain:       ang-company-services
  * Domain Path:       /languages
+ * 
+ * 
+ * ANG Company Services is free software: you can redistribute it and/or modify 
+ * it under the terms of the GNU General Public License as published by 
+ * the Free Software Foundation, either version 2 of the License, or 
+ * any later version.
+ *
+ * ANG Company Services is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+ * GNU General Public License for more details.
+ *
+ * A copy of the GNU General Public License has been included with
+ * ANG Company Services.
+ *
+ * @subpackage  Widget/Services/CPT
+ * @copyright  Copyright (c) 2016, ANG
  */
 
 // If this file is called directly, abort.
 if ( ! defined( 'WPINC' ) ) {
 	die;
 }
+
+define( 'ANG_SERVICES_BASE', plugin_basename(__FILE__) );
 
 /**
  * The code that runs during plugin activation.
